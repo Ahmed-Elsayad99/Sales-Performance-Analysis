@@ -31,22 +31,22 @@ The analysis revealed that sales in 2010 were inflated by extremely high return 
 
 ## Dashboard Preview
 ### Home Page
-![Home Page](1.Dashboard-Home-Page.png)
+![Home Page](11-Dashboard-Home-Page.png)
 
 ### Executive Summary
-![Executive Summary](2.Dashboard-Executive-Summary.png)
+![Executive Summary](12-Dashboard-Executive-Summary.png)
 
 ### Customer Behavior
-![Customer Behavior](3.Dashboard-Customers-Behavior.png)
+![Customer Behavior](13-Dashboard-Customers-Behavior.png)
 
 ### Product Performance
-![Product Performance](4.Dashboard-Product-Performance.png)
+![Product Performance](14-Dashboard-Product-Performance.png)
 
 ### Anomalies Detection
-![Anomalies](5.Dashboard-Anomalies.png)
+![Anomalies](15-Dashboard-Anomalies.png)
 
 ### Data Model
-![Data Model](6.Dashboard-Model.png)
+![Data Model](16-Dashboard-Model.png)
 
 ## Project Files
 
