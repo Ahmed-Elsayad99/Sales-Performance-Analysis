@@ -47,3 +47,18 @@ The analysis revealed that sales in 2010 were inflated by extremely high return 
 
 ### Data Model
 ![Data Model](6.Dashboard-Model.png)
+
+## Project Files
+
+- `01-Online-Retail-DB.sql` → Raw dataset creation
+- `02-Fact-Tables.sql` → Fact tables creation
+- `03-Dim-Tables.sql` → Dimension tables creation
+- `04-RFM-CLV-Customer.sql` → Customer segmentation (RFM & CLV)
+- `05-Customer-Transition-Summary-Per-Quarter.sql` → Customer behavior over time
+- `06-All-Views.sql` → SQL views for analysis
+- `07-Customer-Analysis.sql` → Detailed customer analysis
+- `08-Products-Performance-Analysis.sql` → Product performance analysis
+- `09-Returns-Analysis.sql` → Returns analysis
+- `10-Time-Series-Analysis.sql` → Trend & seasonality analysis
+- `17-Sales Performance Analysis.pbix` → Power BI dashboard
+- `18-Final Report.docx` → Full business report
