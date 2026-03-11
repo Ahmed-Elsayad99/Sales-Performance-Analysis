@@ -9,7 +9,6 @@ The goal of this analysis is to identify the main factors behind this change.
 
 ## Tools Used
 - MySQL
-- SQL
 - Power BI
 
 ## Analysis Workflow
