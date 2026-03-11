@@ -16,7 +16,7 @@ The analysis was conducted in several stages:
 
 1. Database creation
 2. Data modeling (Fact & Dimension tables)
-3. Customer analysis using RFM segmentation
+3. Customer analysis using RFM, and CLV segmentation
 4. Product performance analysis
 5. Returns analysis
 6. Time series analysis
