@@ -215,9 +215,6 @@ from rfm_clv_customer
 where RFM_Segment = 'Vip' ;
 
 
-# Net Movement Score (Upgrades − Downgrades)
-# Early Warning System (مين Regular ومعرّض ينزل)
-# Churn Prediction Logic (SQL-based)
 
 
     
