@@ -16,11 +16,13 @@ The analysis was conducted in several stages:
 
 1. Database creation
 2. Data modeling (Fact & Dimension tables)
-3. Customer analysis using RFM, and CLV segmentation
-4. Product performance analysis
-5. Returns analysis
-6. Time series analysis
-7. Business insights
+3. Sales-Performance-Analysis
+4. Customer-Segmentation-RFM
+5. Customer-Lifetime-Value
+6. Product performance analysis
+7. Returns analysis
+8. Time series analysis
+9. Business insights
 
 ## Key Findings
 - Orders decreased by **9%**
