@@ -12,9 +12,6 @@ CustomerID varchar(100),
 Country varchar(100)
 );
 
-select * from Raw;
-select count(*) from Raw;
-
 SHOW VARIABLES LIKE "secure_file_priv";
 
 SHOW VARIABLES LIKE 'local_infile';
@@ -30,11 +27,9 @@ INTO TABLE Raw
 FIELDS TERMINATED BY ','
 IGNORE 1 LINES;
 
-select * from Raw;
-select count(*) from Raw;
-
 ################################################################################
 # CHECK "Description_" #
+
 UPDATE Raw
 SET Description_ = trim(replace(REPLACE(Description_,'?',''),'*',''));
 UPDATE Raw
@@ -58,6 +53,7 @@ set Description_ = upper(Description_);
 
 ################################################################################
 # CHECK "StockCode" AND "Invoice" #
+
 UPDATE Raw
 SET StockCode = REGEXP_REPLACE(StockCode, '[^0-9]', '');
 UPDATE Raw
@@ -84,6 +80,7 @@ FROM Raw;
 
 ################################################################################
 # CHECK "CustomerID" #
+
 SELECT
     COUNT(*) AS total_rows,
     SUM(CustomerID <> '') AS not_nulls,
@@ -115,6 +112,7 @@ FROM Raw;
 
 ################################################################################
 # CHECK "Price" #
+
 SELECT
     COUNT(*) AS total_rows,
     SUM(Price = 0) AS Z_strings,
@@ -130,6 +128,7 @@ where price =0 ;
 select * from Raw
 where price =0;
 
+## Compensation for prices that do have prices ##
 
 with Avg_Prices as (
 select StockCode, avg(price) as Avg_Price
@@ -143,7 +142,8 @@ on R.StockCode  = A.StockCode
 set R.price = A.Avg_Price
 where price = 0 ;
 
-# تعويص عن الاسعار الي مش ليه اسعار
+## Compensation for prices that have no prices ##
+
 select count(*) from Raw
 where price =0 ;
 select * from Raw
@@ -174,9 +174,7 @@ where price <0 ;
 
 ###########################################################################################################################
 ####################################################################################################################
-
- #STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i'),
-	#CAST(Price AS DECIMAL(10,2))
+# CHECK "InvoiceDate" # 
 
 UPDATE raw
 SET InvoiceDate = STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i');
